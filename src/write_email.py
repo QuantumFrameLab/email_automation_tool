@@ -38,5 +38,5 @@ def write_email():
     
     subprocess.call(["notepad.exe", temp_file])
 
-    print("Your email has been saved in temp.txt")
+    print("Your email has been saved in temp.txt"
 
