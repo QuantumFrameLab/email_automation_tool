@@ -29,7 +29,7 @@ def main():
 
         elif choice == "3":
             write_email()
-            send_email()
+            # send_email()
 
         elif choice == "4":
             register_member()
