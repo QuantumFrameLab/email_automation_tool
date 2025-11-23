@@ -5,7 +5,7 @@ from add_email import add_emails
 from remove_email import delete_email
 from write_email import write_email
 from send_email import send_email
-from register_user import register_users
+from register_user import register_member
 
 def main():
     while True:
@@ -32,7 +32,7 @@ def main():
             send_email()
 
         elif choice == "4":
-            register_users()
+            register_member()
         
         elif choice == "5":
             break
