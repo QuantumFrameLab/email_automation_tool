@@ -1,7 +1,8 @@
 import subprocess
 
 def write_email():
-    file_path = "./data/templates/default.txt"
+    member_temp_path = "./data/templates/member_template.txt"
+    owner_temp_path = "./data/templates/owner_template.txt"
     temp_file = "./data/templates/temp.txt"
 
     with open(file_path) as file:

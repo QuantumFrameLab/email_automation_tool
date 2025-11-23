@@ -1,1 +1,0 @@
-python -u "c:\Users\Kamran\Desktop\QuantumFrameLab\email_automation_tool\src\add_email.py"

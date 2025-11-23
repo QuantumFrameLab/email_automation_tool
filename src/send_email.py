@@ -6,7 +6,7 @@ def send_email():
     email_path = "./data/emails.json"
     email_content = "./data/templates/temp.txt"
      
-    # Fetching Emails in this part
+    # Fetching Emails recipients in this part
     with open(email_path) as file:
         recipients = json.load(file)
     
