@@ -1,3 +1,4 @@
+import os
 import subprocess
 import json
 from register_user import register_member
@@ -36,7 +37,11 @@ def write_email():
     with open(temp_file, "w") as file:
         file.write(temp_content)
     
-    subprocess.call(["notepad.exe", temp_file])
+    if os.name == "nt":
+        subprocess.call(["notepad.exe", temp_file])
+    else:
+        subprocess.call(["nano", temp_file])
+    # subprocess.call(["notepad.exe", temp_file])
 
     print("Your email has been saved in temp.txt")
 
