@@ -31,10 +31,12 @@ def main():
             write_email()
             is_send = str(input("Do you want to send this email? (y/n)"))
             
-            if is_send == "y":
+            if is_send.lower() == "y":
                  send_email()
-            else:
+            elif is_send.lower() == "n":
                  print("Cancelled!")
+            else:
+                 print("Wrong Input")
 
         elif choice == "4":
             register_member()
