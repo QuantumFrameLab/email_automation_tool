@@ -36,8 +36,6 @@ def main():
             else:
                  print("Cancelled!")
 
-                
-
         elif choice == "4":
             register_member()
         
