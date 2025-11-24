@@ -29,7 +29,14 @@ def main():
 
         elif choice == "3":
             write_email()
-            # send_email()
+            is_send = str(input("Do you want to send this email? (y/n)"))
+            
+            if is_send == "y":
+                 send_email()
+            else:
+                 print("Cancelled!")
+
+                
 
         elif choice == "4":
             register_member()
